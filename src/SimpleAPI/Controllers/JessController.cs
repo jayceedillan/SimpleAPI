@@ -15,6 +15,10 @@ namespace SimpleAPI.Controllers
         {
             return new string[] { "Jessie", "Furigay" };
         }
+        [HttpGet("{id}")]
+        public ActionResult<string> GetNewValue(int i)
+        {
+            return i.ToString();
 
+        }
     }
-}
