@@ -12,7 +12,7 @@ namespace SimpleApi.Test
         public void getReturnValueHello()
         {
             var result = weatherForecastController.getNewValue(1);
-            Assert.Equal("Hellos", result.Value);
+            Assert.Equal("Hello", result.Value);
         }
         [Fact]
         public void Test1()
